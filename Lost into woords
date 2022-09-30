@@ -1,0 +1,61 @@
+// Lost In the woods - Intuit OA
+# include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+
+string lostWoods(vector<char>& woodBoard, int n) {
+	string answer;
+
+	int index = 1;
+
+	while(index < n-1) {
+		if(woodBoard[index] == '_') {
+			answer.push_back('W');
+		}
+		else {
+			answer.push_back('J');
+			while(index < n-1 && woodBoard[index] == '*') {
+				index++;
+			}
+		}
+		index++;
+	}
+
+	return answer;
+}
+
+int main(){
+	#ifndef ONLINE_JUDGE
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+#endif
+	// int num;
+	// cin >> num;
+	// vector<char> woodBoard;
+
+	// for(int i = 0; i < num; i++) {
+	// 	char t;
+	// 	cin >> t;
+	// 	woodBoard.push_back(t);
+	// }
+
+	// cout << lostWoods(woodBoard, num);
+	int n;
+	cin>>n;
+	vector<char> v(n);
+	for(int i=0;i<n;i++) cin>>v[i];
+	string ans="";
+	int i=0;
+	while(v[i]!='S')i++;
+	v[i]='_';
+	for(i;i<n;i++){
+	    if(v[i]=='D') break;
+	    if(v[i]=='_') {
+    	    if(v[i+1]=='*') ans+='J';
+    	    else ans+='W';
+	    }
+	}
+	cout<<ans;
+
+	return 0;
+}
