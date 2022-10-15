@@ -4,25 +4,25 @@ $person = array("Alice",  "Bob",  "Zack",  "Lilly",  "Roney");
 $salary = array("550000", "250000", "200000", "150000", "180000");
 
 //First array
-echo "First array: <br/>";
+echo "First array: \n";
 foreach ($person as $key) {
     echo $key . " ";
 }
-echo "<br/>";
+echo "\n";
 
 //Second array
-echo "Second array: <br/>";
+echo "Second array: \n";
 foreach ($salary as $key) {
     echo $key . " ";
 }
-echo "<br/>";
+echo "\n";
 
 $combined = array_combine($person, $salary);
 //Combined array
-echo "Combined array: <br/>";
+echo "Combined array: \n";
 foreach ($combined as $key => $val) {
-    echo $key . "=>" . $val . "<br/>";
+    echo $key . "=>" . $val . "\n";
 }
-echo "<br/>";
+echo "\n";
 
 ?>

@@ -25,21 +25,21 @@ $details = array(
 );
 
 //Original array
-echo "Original array: <br/>";
+echo "Original array: \n";
 foreach ($details as $arr) {
     foreach ($arr as $key => $val) {
         echo $key . "=>" . $val . " ";
     }
-    echo "<br/>";
+    echo "\n";
 }
-echo "<br/>";
+echo "\n";
 
 //Specific column of an array
-echo "Column of an array: <br/>";
+echo "Column of an array: \n";
 $column = array_column($details, "company", "name");
 foreach ($column as $key => $val) {
-    echo $key . "=>" . $val . "<br/>";
+    echo $key . "=>" . $val . "\n";
 }
-echo "<br/>";
+echo "\n";
 
 ?>
