@@ -13,16 +13,16 @@
 #Single-quoted-string
 
 $string1 = 'Welcome to PHP_DSA';
-echo $string1 . "<br/>";
+echo $string1 . "\n";
 
 $string2 = 'We\'ll learn php';
-echo $string2 . "<br/>";
+echo $string2 . "\n";
 
 $string3 = '"Php is easy to learn"';
-echo $string3 . '<br/>';
+echo $string3 . "\n";
 
 $string4 = 'PHP_DSA';
-echo 'Welcome to ' . $string4 . '<br/>';
+echo 'Welcome to ' . $string4 . "\n";
 
 ?>
 
@@ -32,16 +32,16 @@ echo 'Welcome to ' . $string4 . '<br/>';
 #Double-quoted-string
 
 $string1 = "Welcome to PHP_DSA";
-echo $string1 . "<br/>";
+echo $string1 . "\n";
 
 $string2 = "We'll learn php";
-echo $string2 . "<br/>";
+echo $string2 . "\n";
 
 $string3 = "'Php is easy to learn'";
-echo $string3 . '<br/>';
+echo $string3 . "\n";
 
 $string4 = "PHP_DSA";
-echo "Welcome to $string4 <br/>";
+echo "Welcome to $string4 \n";
 ?>
 
 <?php
@@ -57,7 +57,7 @@ DSA
 Hactoberfest
 phpdsa;     //whitespace is not valid before closing 
 
-echo $str . "<br/>";
+echo $str . "\n";
 
 
 #Nowdoc-(Start with [<<<'Name'] and close with [Name;])
@@ -70,6 +70,6 @@ DSA
 Hactoberfest
 phpdsa;     //whitespace is not valid before closing 
 
-echo $str . '<br/>';
+echo $str . "\n";
 
 ?>

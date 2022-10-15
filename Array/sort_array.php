@@ -3,20 +3,20 @@
 
 $sort_arr = [9, 6, 4, 65, 12, 5];
 //Original array
-echo "Array before sorting: <br/>";
+echo "Array before sorting: \n";
 foreach ($sort_arr as $val) {
     echo $val . " ";
 }
-echo "<br/>";
+echo "\n";
 
 //Sorting an array
 sort($sort_arr);
 
-echo "Array after sorting: <br/>";
+echo "Array after sorting: \n";
 foreach ($sort_arr as $val) {
     echo $val . " ";
 }
-echo "<br/>";
+echo "\n";
 
 ?>
 
@@ -27,19 +27,19 @@ echo "<br/>";
 
 $rsort_arr = [96, 63, 4, 65, 12, 5];
 //Original array
-echo "Array before sorting: <br/>";
+echo "Array before sorting: \n";
 foreach ($rsort_arr as $val) {
     echo $val . " ";
 }
-echo "<br/>";
+echo "\n";
 //Sorting an array
 rsort($rsort_arr);
 
-echo "Array after sorting in descending order: <br/>";
+echo "Array after sorting in descending order: \n";
 foreach ($rsort_arr as $val) {
     echo $val . " ";
 }
-echo "<br/>";
+echo "\n";
 
 ?>
 
@@ -49,47 +49,47 @@ echo "<br/>";
 
 $person = array("Alice" => 123, "Bob" => 456, "Zack" => 789, "John" => 159);
 //Original array
-echo "Before sorting: <br/>";
+echo "Before sorting: \n";
 foreach ($person as $pr => $id) {
-    echo $pr . " : " . $id . "<br/>";
+    echo $pr . " : " . $id . "\n";
 }
-echo "<br/>";
+echo "\n";
 
 // asort() - sort associative arrays in ascending order, according to the value
-echo "After sorting by value in ascending order: <br/>";
+echo "After sorting by value in ascending order: \n";
 //Sorting an array
 asort($person);
 foreach ($person as $pr => $id) {
-    echo $pr . " : " . $id . "<br/>";
+    echo $pr . " : " . $id . "\n";
 }
-echo "<br/>";
+echo "\n";
 
 // arsort() - sort associative arrays in descending order, according to the value
-echo "After sorting by value in descending order: <br/>";
+echo "After sorting by value in descending order: \n";
 //Sorting an array
 arsort($person);
 foreach ($person as $pr => $id) {
-    echo $pr . " : " . $id . "<br/>";
+    echo $pr . " : " . $id . "\n";
 }
-echo "<br/>";
+echo "\n";
 
 // ksort() - sort associative arrays in ascending order, according to the key
-echo "After sorting by key in ascending order: <br/>";
+echo "After sorting by key in ascending order: \n";
 //Sorting an array
 ksort($person);
 foreach ($person as $pr => $id) {
-    echo $pr . " : " . $id . "<br/>";
+    echo $pr . " : " . $id . "\n";
 }
-echo "<br/>";
+echo "\n";
 
 
 // krsort() - sort associative arrays in descending order, according to the key
-echo "After sorting by key in descending order: <br/>";
+echo "After sorting by key in descending order: \n";
 //Sorting an array
 krsort($person);
 foreach ($person as $pr => $id) {
-    echo $pr . " : " . $id . "<br/>";
+    echo $pr . " : " . $id . "\n";
 }
-echo "<br/>";
+echo "\n";
 
 ?>
