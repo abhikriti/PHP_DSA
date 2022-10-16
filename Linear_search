@@ -1,0 +1,16 @@
+<?php
+function linear_search(array $list, $toFind) {
+    foreach ($list as $index => $item) {
+        if ($item === $toFind) {
+            return $index;
+        }
+    }
+
+    return -1;
+}
+
+$items = [1,2,3,4,5];
+$toFind = 6;
+echo linear_search($items, $toFind);
+
+/>
